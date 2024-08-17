@@ -1,0 +1,54 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose--800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+.outfit400 {
+  font-family: Outift;
+  font-variation-settings: 'wght' 400;
+}
+
+.outfit600 {
+  font-family: Outift;
+  font-variation-settings: 'wght' 600;
+}
+
+.outfit700 {
+  font-family: Outift;
+  font-variation-settings: 'wght' 700;
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.young-serif400 {
+  font-family: YoungSerif;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1rem;
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
