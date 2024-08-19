@@ -15,40 +15,144 @@
   src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
-.outfit400 {
-  font-family: Outift;
+/* .outfit400 {
+  font-family: Outfit;
   font-variation-settings: 'wght' 400;
 }
 
 .outfit600 {
-  font-family: Outift;
+  font-family: Outfit;
   font-variation-settings: 'wght' 600;
 }
 
 .outfit700 {
-  font-family: Outift;
+  font-family: Outfit;
   font-variation-settings: 'wght' 700;
-}
+} */
 
 @font-face {
   font-family: YoungSerif;
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
-.young-serif400 {
+/* .young-serif400 {
   font-family: YoungSerif;
   font-weight: 400;
-}
+} */
 
 body {
+  background-color: var(--stone-100);
   font-size: 1rem;
+  font-family: Outfit;
+  font-weight: 400;
+
+  h1 {
+    font-family: YoungSerif;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    color: var(--stone-600);
+    line-height: 1.5rem;
+  }
+
+  hr {
+    border-color: var(--stone-150);
+    border-style: solid;
+    margin: 2rem 0;
+  }
 }
 
-footer.attribution {
+main {
+  background-color: var(--white);
+  width: min(62ch, 100% - 4rem);
+  margin-inline: auto;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+ul,
+ol {
+  padding: 0 0 0 1.5rem;
+
+  li::marker {
+    font-weight: 700;
+    color: var(--brown-800);
+  }
+
+  li>p {
+    padding-left: 0rem;
+    margin: 0.75rem;
+  }
+}
+
+section#preparation-time {
+  margin: 2rem auto;
+  background-color: var(--rose-50);
+  padding: 1rem 1.75rem;
+  border-radius: 1rem;
+
+  ul li::marker {
+    color: var(--rose--800);
+  }
+
+
+  h3 {
+    color: var(--rose--800);
+
+  }
+}
+
+section>header>h2 {
+  font-family: YoungSerif;
+  font-weight: 400;
+  color: var(--brown-800);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid var(--stone-150);
+    ;
+  }
+
+  tr {
+    >td {
+      width: 47%;
+      padding: 1rem 2rem;
+      color: var(--stone-600);
+    }
+  }
+
+  td+td {
+    font-family: Outfit;
+    font-variation-settings: 'wght' 600;
+    color: var(--brown-800);
+    width: 53%;
+  }
+}
+
+footer {
   font-size: 11px;
   text-align: center;
-}
 
-footer.attribution a {
-  color: hsl(228, 45%, 44%);
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
